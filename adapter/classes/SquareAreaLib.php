@@ -2,12 +2,12 @@
 
 namespace classes;
 
-class CircleAreaLib
+class SquareAreaLib
 {
-    public function getCircleArea(int $diagonal)
+    public function getSquareArea(int $diagonal)
     {
-        $area = (M_PI * $diagonal**2) / 4;
+        $area = ($diagonal ** 2) / 2;
 
-       return $area;
-   }
+        return $area;
+    }
 }

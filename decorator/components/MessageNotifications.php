@@ -4,10 +4,10 @@ namespace components;
 
 use interfaces\INotifications;
 
-class PushNotifications implements INotifications
+class MessageNotifications implements INotifications
 {
     public function message() : string
     {
-        return "PushNotifications";
+        return "MessageNotifications";
     }
 }

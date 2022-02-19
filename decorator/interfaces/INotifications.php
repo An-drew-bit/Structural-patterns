@@ -2,7 +2,7 @@
 
 namespace interfaces;
 
-class INotifications
+interface INotifications
 {
-
+    public function message() : string;
 }

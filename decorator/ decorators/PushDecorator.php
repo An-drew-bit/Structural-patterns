@@ -2,10 +2,10 @@
 
 namespace decorators;
 
-class MessageDecorator extends Decorator
+class PushDecorator extends Decorator
 {
     public function message(): string
     {
-        return "MessageDecorator(" . parent::message() . ")";
+        return "PushDecorator(" . parent::message() . ")";
     }
 }

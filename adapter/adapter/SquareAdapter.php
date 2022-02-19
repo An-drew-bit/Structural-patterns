@@ -2,9 +2,20 @@
 
 namespace adapter;
 
-use interfaces\ICircle;
+use classes\SquareAreaLib;
+use interfaces\ISquare;
 
-class CircleAdapter implements ICircle
+class SquareAdapter implements ISquare
 {
+    protected $squareAreaLib;
 
+    public function __construct(SquareAreaLib $squareAreaLib)
+    {
+        $this->squareAreaLib = $squareAreaLib;
+    }
+
+    public function squareArea(int $sideSquare)
+    {
+        return $this->squareAreaLib->getSquareArea($sideSquare);
+    }
 }

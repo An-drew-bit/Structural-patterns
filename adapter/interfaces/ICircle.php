@@ -2,7 +2,7 @@
 
 namespace interfaces;
 
-interface ISquare
+interface ICircle
 {
-    function squareArea(int $sideSquare);
+    function circleArea(int $circumference);
 }
